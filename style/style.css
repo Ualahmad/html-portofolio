@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Styling untuk element (body, font, dsb)*/
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk element (h2, h3) */
+h2,
+h3 {
+  color: purple;
+}
+
+/* Styling untuk element paragraf */
+p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Styling untuk element header */
+header {
+  display: inline;
+  color: white; 
+  text-align: left; 
+  box-shadow: 04px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling untuk bagian gambar */
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Styling untuk navigasi bagian bar */
+nav {
+  background-color: #820ec5;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  flex-direction: unset;
+}
+
+/* Styling untuk navigasi pilihan pada kata (saham, reksadana, obligasi) */
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling untuk navigasi underline pada pilihan kata (saham, reksadana, obligasi) */
+nav a:hover {
+  color: #ffcc00; /* Ubah warna teks saat hover */
+  text-decoration: underline;
+}
+
+/* Styling untuk navigasi pilihan (saham, reksadana, obligasi) menjadi memanjang */
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* menonaktifkan list pada navigasi */
+nav li {
+  list-style-type: none;
+}
+
+/* Styling untuk gambar besar web */
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #4e0677;
+  text-align: center;
+  color: white;
+}
+
+/* Styling untuk h1 pada jumbotron dengan memperbesar */
+.jumbotron h1 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+}
+
+/* Styling untuk p pada jumbotron dengan memperbesar */
+.jumbotron p {
+  font-size: 1.2rem; 
+  margin-top: 10px; 
+}
+
+/* Styling aside dari atribut profile card */
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  max-width: 200px;
+  border-radius: 50%; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Styling aside pada bagian th */
+section table th {
+  font-weight: bold;
+  text-align: left; 
+}   
+
+/* Styling pada bagian section untuk memberikan space */
+section {
+  margin-bottom: 20px;
+}
+
+/* Styling pada bagian main */
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+  text-align: justify;
+}
+
+/* Styling pada bagian atribut content (flexbox) */
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+/* Styling element footer */
+footer {
+  padding: 20px;
+  background-color: #8174A0;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
